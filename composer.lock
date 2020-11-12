@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fac753ae2702317b354e7eb283f28cbc",
+    "content-hash": "c70c11365ce9486061b2db36beaaa0f3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1370,6 +1370,47 @@
             "time": "2020-10-18T11:50:25+00:00"
         },
         {
+            "name": "longhn/convert",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NgocLongs/longhn.git",
+                "reference": "d979815792b05a035297f7902104ba1ef9fdc206"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NgocLongs/longhn/zipball/d979815792b05a035297f7902104ba1ef9fdc206",
+                "reference": "d979815792b05a035297f7902104ba1ef9fdc206",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "^2.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LongHN\\Convert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "longhn",
+                    "email": "longjinhofc@gmail.com"
+                }
+            ],
+            "description": "Convert Latin",
+            "support": {
+                "issues": "https://github.com/NgocLongs/longhn/issues",
+                "source": "https://github.com/NgocLongs/longhn/tree/1.0"
+            },
+            "time": "2020-11-12T09:14:56+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.1.1",
             "source": {
@@ -2340,6 +2381,44 @@
                 }
             ],
             "time": "2020-08-18T17:17:46+00:00"
+        },
+        {
+            "name": "scss/scss",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thangtn-neolab/laravel_scss.git",
+                "reference": "c817bf9e22a4629470cee3ead512cb67cb66185f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thangtn-neolab/laravel_scss/zipball/c817bf9e22a4629470cee3ead512cb67cb66185f",
+                "reference": "c817bf9e22a4629470cee3ead512cb67cb66185f",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Scss\\Scss\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "TNT",
+                    "email": "thang.tn@neo-lab.vn",
+                    "role": "Developer"
+                }
+            ],
+            "description": "compile scss to css",
+            "support": {
+                "issues": "https://github.com/thangtn-neolab/laravel_scss/issues",
+                "source": "https://github.com/thangtn-neolab/laravel_scss/tree/1.3"
+            },
+            "time": "2020-11-12T06:12:56+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4614,6 +4693,47 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.3"
             },
             "time": "2020-07-13T06:12:54+00:00"
+        },
+        {
+            "name": "trongtd/datetime",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/trong291990/datetime.git",
+                "reference": "03eda0f2cbc296faad4d5a301a39f6b55847c44e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/trong291990/datetime/zipball/03eda0f2cbc296faad4d5a301a39f6b55847c44e",
+                "reference": "03eda0f2cbc296faad4d5a301a39f6b55847c44e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TrongTD\\Datetime\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tran Dinh Trong",
+                    "email": "trong.td@neo-lab.vn",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Datetime package",
+            "keywords": [
+                "datetime"
+            ],
+            "support": {
+                "issues": "https://github.com/trong291990/datetime/issues",
+                "source": "https://github.com/trong291990/datetime/tree/1.0.0"
+            },
+            "time": "2020-11-12T03:38:11+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -7247,7 +7367,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "longhn/convert": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Scss\Scss\CompileScss;
 
+// use Longhn\Tools;
+// use TrongTD\Datetime;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+CompileScss::run_compile();
 Route::get('/', function () {
+    // $cv = new Datetime();
+    // $cv->myFormat();
+    $a = new TrongTD\Datetime\Datetime();
+    $a->myFormat();
+
+    $b = new LongHN\Convert\Convert();
+    $str = 'Xin chào mọi người haha !';
+    $c = $b->convertLatin($str);
+    // dd($c);
     return view('welcome');
 });
