@@ -31,6 +31,15 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+# Install Node
+RUN apt-get update &&\
+    apt-get install -y --no-install-recommends gnupg &&\
+    curl -sL https://deb.nodesource.com/setup_14.x | bash - &&\
+    apt-get update &&\
+    apt-get install -y --no-install-recommends nodejs &&\
+    npm config set registry https://registry.npm.taobao.org --global &&\
+    npm install --global gulp-cli
+
 # Add user for laravel application
 RUN groupadd -g 1000 www
 RUN useradd -u 1000 -ms /bin/bash -g www www
